@@ -1,0 +1,229 @@
+/* IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@400;700&display=swap');
+
+/* VARIABLES */
+
+:root {
+
+    /* PALETTE */
+    --primary: #444B6E;
+    --secondary: #F38D68;
+    --tertiary: #44BBA4;
+    --quaternary: #A09ABC;
+    --sure : #F1DABF;
+    /* FONT SIZES */
+    --text-xxxl: 4.8em;
+    --text-xxl: 4.0em;
+    --text-xl: 3.6em;
+    --text-lg: 3.2em;
+    /*---------------*/    
+    --text-md: 2.2em;
+    --text-sm: 1.6em;
+    --text-xs: 1.2em;
+    /* SPASING */
+    --sp-lg: 12rem;
+    --sp-md: 8rem ;
+    --sp-sm: 5rem ;
+    --sp-xs: 4rem ;
+    --sp-xss: 3rem ;
+    --sp-xsss: 1.6rem ;
+    --sp-xssss: 0.8rem ;
+
+    
+}
+
+/* NORMALIZE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+ body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--quaternary);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a  {
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    display: inline-block;
+    color: var(--sure);
+    font-size: var(--text-md);
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    font-size: var(--text-md);
+}
+
+h2 {
+    font-size: var(--text-lg);
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--quaternary);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navbar__logo{
+    display: flex;
+    align-items: center;
+}
+.navbar .navbar__logo .navbar__name {
+    padding: 1.5rem 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    color: var(--primary);
+    font-size: var(--text-xl);
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.navbar .menu .menu__item .menu__link {
+    padding: var(--sp-xssss);
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+.navbar .menu .menu__item .menu__link:hover {
+    background-color: var(--primary);
+    color: var(--quaternary);
+    text-decoration: underline;
+}
+
+/*BODY*/
+#banner {
+    display: grid;
+    place-items: center;
+}
+#bg_historia {
+    color: var(--tertiary);
+    display: grid;
+    width: 25em;
+    position: absolute;
+    top: 25em;
+    left: 105em;
+}
+#bg_resources {
+    display: block;
+    background-color: white;
+    padding: var(--sp-md);
+}
+.boxe {
+    display: flex;
+}
+.boxe .boxe__item {
+    flex: 1 1 50%;
+}
+
+/*FOOTER*/
+
+#bg_footer {
+    background-color: var(--primary);
+}
+
+.footer {
+    padding: var(--sp-xs);
+    display: flex;
+    gap: 30rem;
+}
+
+.hover {
+    background-color: var(--quaternary);
+}
+
+.footer .footer__info {
+    flex: 1 1 50%;
+    border-radius: 1em;
+    padding: var(--sp-xss);
+}
+
+
+.footer .footer__info .footer__info__info {
+    font-size: var(--text-sm);
+    color: white;
+    margin: var(--sp-xsss);
+    max-width: 15em;
+    max-height: 30em;
+}
+
+.footer .footer__info .footer__info__img {
+    max-width: 18.9em;
+    max-height: 16.3em;
+    position: relative;
+    top: 0.1em;
+    left: 7em;
+}
+
+.footer .footer__info .footer__info__redes {
+    padding: var(--sp-xss);
+    margin-top:var(--sp-xs);
+}
+.footer .footer__info .footer__navfoot .footer__navfoot__name {
+    color: white;
+    padding-bottom: var(--sp-xsss);
+}
+
+.footer .footer__info .footer__navfoot .footer__navfoot__footmenu .footer__navfoot__footmenu__item a {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+}
+
+.footer .footer__info .footer__navfoot .footer__navfoot__footmenu li {
+    border-bottom: 3px solid white;
+    margin-bottom: var(--sp-xsss);
+
+}
+
+
+
+
+
+
+/* MEDIAS */
+@media screen and (max-width: 926px){
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .menu {
+        justify-content: center;
+    }
+}
+
+
+
+
