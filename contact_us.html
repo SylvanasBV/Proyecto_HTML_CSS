@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a pet</title>
     <link rel="stylesheet" href="./css/index.css">
-    <title>Contact us</title>
 </head>
-<body class="container">
+<body>
     <header>
-        <nav class="navbar">
-            <a class="navbar__link" href="#top">
-                <img src="./img/ICON.png" alt="Fundación IPet logo">
-            </a>
-            <p class="navbar__name"> Fundation IPET </p>
+        <nav class="navbar container">
+            <section class="navbar__logo">
+                <a class="navbar__link" href="#top">
+                    <img src="./img/ICON.png" alt="Fundación IPet logo">
+                </a>
+                <p class="navbar__name"> Fundation IPET </p>
+            </section>
             <ul class="menu">
                 <li class="menu__item">
                     <a class="menu__link" href="./index.html">HOME</a>
@@ -34,23 +36,33 @@
         </nav>
     </header>
     <main>
-        <section id="title">
+        <section id="titlecontact">
             <h1>CONTACT US</h1>
         </section>
         <section id="formulary">
-            <article>
-                <form action="" method="get">
-                    <label for="">Name and Surname *</label>
-                    <input type="text" name="name" id="name">
-                    <label for="">City</label>
-                    <input type="text" name="city" id="city">
-                    <label for="">Email *</label>
-                    <input type="text" name="email" id="email">
-                    <label for="">Phone *</label>
-                    <input type="text" name="phone" id="phone">
-                    <label for="">Message *</label>
-                    <textarea name="addmessage" id="addmessage" cols="30" rows="10"></textarea>
-                    <input type="button" value="SEND">
+            <article class="contactus container">
+                <form class="contactus__form" action="" method="get">
+                    <article class="contactus__form__items">
+                        <label for="">Name and Surname *</label>
+                        <input type="text" name="name" id="name">
+                    </article>
+                    <article class="contactus__form__items">
+                        <label for="">City</label>
+                        <input type="text" name="city" id="city">
+                    </article>
+                    <article class="contactus__form__items">    
+                        <label for="">Email *</label>
+                        <input type="text" name="email" id="email">
+                    </article>
+                    <article class="contactus__form__items">
+                        <label for="">Phone *</label>
+                        <input type="text" name="phone" id="phone">
+                    </article>
+                    <article class="contactus__form__items"> 
+                        <label for="">Message *</label>
+                        <textarea name="addmessage" id="addmessage" cols="30" rows="10"></textarea>
+                    </article>
+                    <button >SEND</button>
                 </form>
             </article>
         </section>
@@ -74,24 +86,24 @@
                     <nav class="footer__navfoot">
                         <h2 class="footer__navfoot__name"> MENU </h2>
                         <ul class="footer__navfoot__footmenu">
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--aboutus">
                                 <a class="footmenu__link" href="">ABOUT US</a>
                             </li>
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--adopt">
                                 <a class="footmenu__link" href="./adopt.html">ADOPT</a>
                             </li>
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--shop">
                                 <a class="footmenu__link" href="./shop.html">SHOP</a>
                             </li>
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--ihelp">
                                 <a class="footmenu__link" href="./ihelp.html">#IHELP</a>
                             </li>
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--contactus">
                                 <a class="footmenu__link" href="./contact_us.html">CONTACT US</a>
                             </li>
                         </ul>
                     </nav>
-                    <articule>
+                    <articule class="footer__apps">
                         <figure>
                             <img src="./img/GOOGLE PLAY.png" alt="Logo Google Play">
                         </figure>
@@ -101,9 +113,11 @@
                     </articule>
                 </article>
             </article>
-            <ficure>
-                <p>@2022 Imagine Marqueting Private Limited. All Rights Reserved</p>
-            </ficure>
+            <section class="container end">
+                <ficure>
+                    <p>@2022 Imagine Marqueting Private Limited. All Rights Reserved</p>
+                </ficure>
+            </section>
         </section>
     </footer>
 </body>

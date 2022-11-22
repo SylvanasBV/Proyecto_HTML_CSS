@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
+    <title>Adopt a pet</title>
     <link rel="stylesheet" href="./css/index.css">
-
 </head>
-
-<body class="container">
+<body>
     <header>
-        <nav class="navbar">
-            <a class="navbar__link" href="#top">
-                <img src="./img/ICON.png" alt="Fundación IPet logo">
-            </a>
-            <p class="navbar__name"> Fundation IPET </p>
+        <nav class="navbar container">
+            <section class="navbar__logo">
+                <a class="navbar__link" href="#top">
+                    <img src="./img/ICON.png" alt="Fundación IPet logo">
+                </a>
+                <p class="navbar__name"> Fundation IPET </p>
+            </section>
             <ul class="menu">
                 <li class="menu__item">
                     <a class="menu__link" href="./index.html">HOME</a>
@@ -36,71 +36,61 @@
         </nav>
     </header>
     <main>
-        <section id="title">
-            <article>
+        <section id="shoptitle">
+            <article class="shoptitle__title">
                 <h1>SHOP</h1>
             </article>
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam a minus consequuntur 
-                    aperiam voluptate quasi facilis cupiditate impedit aliquid, libero magnam, omnis minima 
-                    illo consectetur, ullam at similique dolorum laborum.</p>
+            <article class="shoptitle__content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
             </article>
         </section>
-        <secttion id="Resources">
-            <articule class="shop">
-                <article class="shop__donate">
-                    <article>
+        <secttion id="resources">
+            <article class="shop container">
+                <article class="shop__items">
+                    <article class="shop__items__photo">
                         <figure>
-                           <img src="" alt="">
+                           <img src="./img/SHOPDONATE.png" alt="Imagen de donacion">
                         </figure>
                     </article>
-                    <article>
-                        <h3>Donate</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem maxime quasi laudantium.
-                            Ducimus commodi repellat porro dolor rem maxime velit quae nesciunt magnam a sequi 
-                            inventore corrupti, facilis temporibus amet!</p>
+                    <article class="shop__items__info">
+                        <h2>Donate</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem maxime quasi laudantium.</p>
                     </article>
                 </article>
-                <article class="shop__toys">
-                    <article>
+                <article class="shop__items">
+                    <article class="shop__items__photo">
                         <figure>
-                            <img src="" alt="">
+                            <img src="./img/SHOPDONATE.png" alt="Imagen de donacion">
                         </figure>
                     </article>
-                    <article>
-                        <h3>Toys</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem maxime quasi laudantium.
-                            Ducimus commodi repellat porro dolor rem maxime velit quae nesciunt magnam a sequi 
-                            inventore corrupti, facilis temporibus amet!</p>                        
-                    </article>
-                    </article>
-                <article class="shop__clothes">
-                    <article>
-                        <figure>
-                            <img src="" alt="">
-                        </figure>
-                    </article>
-                    <article>
-                        <h3>Clothes</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem maxime quasi laudantium.
-                            Ducimus commodi repellat porro dolor rem maxime velit quae nesciunt magnam a sequi 
-                            inventore corrupti, facilis temporibus amet!</p>
+                    <article class="shop__items__info">
+                        <h2>Toys</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem maxime quasi laudantium.</p>                        
                     </article>
                 </article>
-                <article class="shop__food">
-                    <article>
+                <article class="shop__items">
+                    <article class="shop__items__photo">
                         <figure>
-                        <img src="" alt="">
+                            <img src="./img/SHOPDONATE.png" alt="Imagen de donacion">
                         </figure>
                     </article>
-                    <article>
-                        <h3>Food</h3>
-                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem maxime quasi laudantium.
-                        Ducimus commodi repellat porro dolor rem maxime velit quae nesciunt magnam a sequi 
-                        inventore corrupti, facilis temporibus amet!</p>
+                    <article class="shop__items__info">
+                        <h2>Clothes</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem maxime quasi laudantium.</p>
                     </article>
                 </article>
-            </articule>
+                <article class="shop__items">
+                    <article class="shop__items__photo">
+                        <figure>
+                            <img src="./img/SHOPDONATE.png" alt="Imagen de donacion">
+                        </figure>
+                    </article>
+                    <article class="shop__items__info">
+                        <h2>Food</h2>
+                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem maxime quasi laudantium.</p>
+                    </article>
+                </article>
+            </article>
         </secttion>
     </main>
     <footer>
@@ -122,24 +112,24 @@
                     <nav class="footer__navfoot">
                         <h2 class="footer__navfoot__name"> MENU </h2>
                         <ul class="footer__navfoot__footmenu">
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--aboutus">
                                 <a class="footmenu__link" href="">ABOUT US</a>
                             </li>
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--adopt">
                                 <a class="footmenu__link" href="./adopt.html">ADOPT</a>
                             </li>
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--shop">
                                 <a class="footmenu__link" href="./shop.html">SHOP</a>
                             </li>
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--ihelp">
                                 <a class="footmenu__link" href="./ihelp.html">#IHELP</a>
                             </li>
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--contactus">
                                 <a class="footmenu__link" href="./contact_us.html">CONTACT US</a>
                             </li>
                         </ul>
                     </nav>
-                    <articule>
+                    <articule class="footer__apps">
                         <figure>
                             <img src="./img/GOOGLE PLAY.png" alt="Logo Google Play">
                         </figure>
@@ -149,9 +139,11 @@
                     </articule>
                 </article>
             </article>
-            <ficure>
-                <p>@2022 Imagine Marqueting Private Limited. All Rights Reserved</p>
-            </ficure>
+            <section class="container end">
+                <ficure>
+                    <p>@2022 Imagine Marqueting Private Limited. All Rights Reserved</p>
+                </ficure>
+            </section>
         </section>
     </footer>
 </body>

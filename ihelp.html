@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ihelp</title>
+    <title>Adopt a pet</title>
     <link rel="stylesheet" href="./css/index.css">
-
 </head>
-<body class="container">
+<body>
     <header>
-        <nav class="navbar">
-            <a class="navbar__link" href="#top">
-                <img src="./img/ICON.png" alt="Fundación IPet logo">
-            </a>
-            <p class="navbar__name"> Fundation IPET </p>
+        <nav class="navbar container">
+            <section class="navbar__logo">
+                <a class="navbar__link" href="#top">
+                    <img src="./img/ICON.png" alt="Fundación IPet logo">
+                </a>
+                <p class="navbar__name"> Fundation IPET </p>
+            </section>
             <ul class="menu">
                 <li class="menu__item">
                     <a class="menu__link" href="./index.html">HOME</a>
@@ -35,62 +36,79 @@
         </nav>
     </header>
     <main>
-        <section id="title">
+        <section id="introduce">
             <h1>¿How can I help us?</h1>
         </section>
-        <section id="info">
-            <article>
-                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Amet consequatur earum nobis, dolor praesentium reprehenderit 
-                    temporibus cum impedit suscipit. Iure quidem quas necessitatibus culpa! 
-                    Ratione ipsam beatae eum voluptas maiores?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Fugiat dolorem quaerat iste provident nihil temporibus eaque aspernatur 
-                    harum? Quos molestias neque consequatur ut aperiam dolor explicabo 
-                    perspiciatis voluptas numquam laboriosam.
-                Quisquam laboriosam doloribus minus deleniti qui explicabo ut cum facilis, 
-                nisi suscipit, deserunt saepe quam impedit facere beatae, soluta sequi quis 
-                reiciendis. Dicta obcaecati iste est consequuntur ullam, minus saepe.</p>
-            </article>    
-            <article>
-                <figure>
-                    <img src="" alt="" >
-                </figure>
-            </article> 
+        <section id="intro">
+            <article class="ihelpintro container">
+                <article class="ihelpintro__text">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Amet consequatur earum nobis, dolor praesentium reprehenderit 
+                        temporibus cum impedit suscipit. Iure quidem quas necessitatibus culpa! 
+                        Ratione ipsam beatae eum voluptas maiores?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugiat dolorem quaerat iste provident nihil temporibus eaque aspernatur 
+                        harum? Quos molestias neque consequatur ut aperiam dolor explicabo 
+                        perspiciatis voluptas numquam laboriosam.
+                    Quisquam laboriosam doloribus minus deleniti qui explicabo ut cum facilis, 
+                    nisi suscipit, deserunt saepe quam impedit facere beatae, soluta sequi quis 
+                    reiciendis. Dicta obcaecati iste est consequuntur ullam, minus saepe.</p>
+                </article>    
+                <article class="ihelpintro__img">
+                    <figure>
+                        <img src="./img/IHELPINTRO.jpg" alt="dogs in the Fundation" >
+                    </figure>
+                    <p>" Happiness has been into our hearts "</p>
+                    <p>Andres Felipe Barbosa (Cofundador de Ipet)</p>
+                </article> 
+            </article>
         </section>
         <section id="interview">
-            <article>
-                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-            </article>    
-            <article>
-                <video src=""></video>
+            <article class="knownipet container">
+                <article class="knownipet__title">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                </article>    
+                <article class="knownipet__video">
+                    <iframe width="500" height="500" src="https://www.youtube.com/embed/KNM5_lO1dOA" title="7 Ways Having a Pet Can Improve Your Mental health" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <article class="knownipet__video__text">
+                        <h2>Lorem ipsum dolor sit amet consectetur</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sequi provident illo accusantium magni, expedita neque labore praesentium similique delectus! Illum, fugiat maxime. Optio voluptate laborum deleniti cumque molestiae at.</p>
+                    </article>
+                </article>
             </article> 
         </section>
-        <section>
-            <article class="helpinfo">
-                <article class="helpinfo__text">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Accusamus id nam libero. Aliquid aspernatur rem repellat velit,
-                         minus deleniti eum cupiditate temporibus, quasi eligendi explicabo nobis
-                          illum doloribus, nulla nostrum?</p>
+        <section id="ushelp">
+            <article class="helpinfo container">
+                <article class="helpinfo__title">
+                    <h2>Help us</h2>
                 </article>
-                <article class="helpinfo__form">
-                    <form action="" method="get">
-                        <article class="helpinfo__form__input">
+                <article class="helpinfo__content">
+                    <article class="helpinfo__content__text">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Accusamus id nam libero. Aliquid aspernatur rem repellat velit,
+                            minus deleniti eum cupiditate temporibus, quasi eligendi explicabo nobis
+                            illum doloribus, nulla nostrum?</p>
+                    </article>
+                    <form class="helpinfo__content__from" method="get">
+                        <article class="helpinfo__content__form__input">
                             <label for="name">Name and Surname *</label>
                             <input type="text" name="name" id="name">
-                        </article class="helpinfo__form__input">
-                        <article>
+                        </article>
+                        <article class="helpinfo__content__form__input">
                             <label for="phone">Phone *</label>
                             <input type="text" name="phone" id="phone">
                         </article>
-                        <article class="helpinfo__form__input">
-                            <label for="city">City</label>
-                            <input type="text" name="city" id="city">
+                        <article class="helpinfo__content__form__input">
+                            <label for="location">Location</label>
+                            <input type="text" name="location" id="location">
                         </article>
-                        <article class="helpinfo__form__input">
+                        <article class="helpinfo__content__form__input">
+                            <label for="date">Date</label>
+                            <input type="text" name="date" id="date">
+                        </article>
+                        <article class="helpinfo__content__form__input">
                             <label for="addinfo">Aditional information</label>
                             <textarea name="addinfo" id="addinfo" cols="30" rows="10"></textarea>
                         </article>
@@ -118,24 +136,24 @@
                     <nav class="footer__navfoot">
                         <h2 class="footer__navfoot__name"> MENU </h2>
                         <ul class="footer__navfoot__footmenu">
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--aboutus">
                                 <a class="footmenu__link" href="">ABOUT US</a>
                             </li>
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--adopt">
                                 <a class="footmenu__link" href="./adopt.html">ADOPT</a>
                             </li>
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--shop">
                                 <a class="footmenu__link" href="./shop.html">SHOP</a>
                             </li>
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--ihelp">
                                 <a class="footmenu__link" href="./ihelp.html">#IHELP</a>
                             </li>
-                            <li class="footer__navfoot__footmenu__item">
+                            <li class="footer__navfoot__footmenu__item--contactus">
                                 <a class="footmenu__link" href="./contact_us.html">CONTACT US</a>
                             </li>
                         </ul>
                     </nav>
-                    <articule>
+                    <articule class="footer__apps">
                         <figure>
                             <img src="./img/GOOGLE PLAY.png" alt="Logo Google Play">
                         </figure>
@@ -145,9 +163,11 @@
                     </articule>
                 </article>
             </article>
-            <ficure>
-                <p>@2022 Imagine Marqueting Private Limited. All Rights Reserved</p>
-            </ficure>
+            <section class="container end">
+                <ficure>
+                    <p>@2022 Imagine Marqueting Private Limited. All Rights Reserved</p>
+                </ficure>
+            </section>
         </section>
     </footer>
 </body>
