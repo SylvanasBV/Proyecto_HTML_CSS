@@ -22,6 +22,7 @@
     --text-md: 2.2em;
     --text-sm: 1.6em;
     --text-xs: 1.2em;
+    --text-xss: 1em;
     /* SPASING */
     --sp-lg: 12rem;
     --sp-md: 8rem ;
@@ -109,6 +110,11 @@ header {
     font-weight: bold;
     color: var(--primary);
     font-size: var(--text-xl);
+    animation: danzar 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.navbar .navbar__logo .navbar__link {
+    animation: appear 2.1s linear;
 }
 
 .navbar .menu {
@@ -178,6 +184,8 @@ header {
 .boxe .boxe__item:hover{
     display: flex;
     align-items: center;
+    transform: scale(1.1,1.1);
+    cursor: pointer;
     justify-content: space-between;
     border-radius: 1em;
     padding-left: 2rem;
@@ -987,10 +995,16 @@ header {
     #bg_resources {
         padding: var(--sp-xss);
     }
+    #info .info__mascotas .info__mascotas__info p{
+        font-size: var(--text-sm);
+    }
 }
 
 @media screen and (max-width: 700px){
-
+    #info .info__mascotas .info__mascotas__info p{
+        font-size: var(--text-sm);
+        text-align: center;
+    }
     .footer {
         flex-wrap: wrap;
         max-height: none;
@@ -1016,5 +1030,46 @@ header {
     #bg_historia .text h2{
         font-size: var(--text-ml);
         text-align: center;
+    }
+    #info .info__mascotas .info__mascotas__info p{
+        font-size: var(--text-md);
+    }
+}
+
+/* ANIMACIONES */
+
+@keyframes danzar {
+    0% {
+        transform:scale(1,1);
+        transform: translate(-500px);
+        opacity: 1;
+    }
+    26% {
+        transform:scale(1.1,1.1);
+        opacity: 0;
+    }
+    50% {
+        transform:scale(1.2,1.2);
+        opacity: 0;
+    }
+    75% {
+        transform:scale(1.1,1.1);
+        opacity: 1;
+    }
+    100% {
+        transform:scale(1,1);
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    0%{
+        transform: translate(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
     }
 }
